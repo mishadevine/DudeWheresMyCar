@@ -9,7 +9,7 @@ import React, {
 } from 'react-native';
 
 import Button from './components/Button';
-import Header from './components/Header';
+// import Header from './components/Header';
 
 import Login from './Login';
 
@@ -87,14 +87,12 @@ class Signup extends Component {
             style={styles.email}
             onChangeText={(text) => this.setState({email: text})}
             value={this.state.email}
-            placeholder={"Email Address"}
           />
           <TextInput
             style={styles.password}
             onChangeText={(text) => this.setState({password: text})}
             value={this.state.password}
             secureTextEntry={true}
-            placeholder={"Password"}
           />
 
           <Button

@@ -10,7 +10,6 @@ import React, {
 } from 'react-native';
 
 import Button from './components/Button';
-import Header from './components/Header';
 
 import Signup from './Signup';
 import Account from './Account';
@@ -72,18 +71,22 @@ class Login extends Component {
           </Text>
         </View>
         <View>
+          <Text>
+            Email:
+          </Text>
           <TextInput
             style={styles.email}
             onChangeText={(text) => this.setState({email: text})}
             value={this.state.email}
-            placeholder={"Email Address"}
           />
+          <Text>
+            Password:
+          </Text>
           <TextInput
             style={styles.password}
             onChangeText={(text) => this.setState({password: text})}
             value={this.state.password}
             secureTextEntry={true}
-            placeholder={"Password"}
           />
 
           <Button
